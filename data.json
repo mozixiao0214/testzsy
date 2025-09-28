@@ -1,11 +1,9 @@
 [
   { "image": "https://picsum.photos/600/400?random=1", "title": "腾讯视频" },
-  { "image": "https://picsum.photos/600/400?random=2", "title": "腾讯视频" },
-  { "image": "https://picsum.photos/600/400?random=3", "title": "腾讯视频" },
-  { "image": "https://picsum.photos/600/400?random=4", "title": "腾讯视频" },
-  { "image": "https://picsum.photos/600/400?random=5", "title": "腾讯视频" },
-  { "image": "https://picsum.photos/600/400?random=6", "title": "腾讯视频" },
-  { "image": "https://picsum.photos/600/400?random=7", "title": "腾讯视频" },
-  { "image": "https://picsum.photos/600/400?random=8", "title": "腾讯视频" },
-  { "image": "https://picsum.photos/600/400?random=9", "title": "腾讯视频" }
+  { "image": "https://picsum.photos/600/400?random=2", "title": "酷我音乐" },
+  { "image": "https://picsum.photos/600/400?random=3", "title": "好好看影视" },
+  { "image": "https://picsum.photos/600/400?random=4", "title": "可可影视" },
+  { "image": "https://picsum.photos/600/400?random=5", "title": "网飞猫影视" },
+  { "image": "https://picsum.photos/600/400?random=6", "title": "剪映" },
+  { "image": "https://picsum.photos/600/400?random=7", "title": "快影" }
 ]
