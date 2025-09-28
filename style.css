@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #000;
+    margin: 0; /* 清除所有边距 */
+}
+
+/* 代码雨背景：绝对全屏，强制拉伸无间隙 */
+#matrix-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.matrix-row {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    gap: 20px; /* 超大横向间距 */
+    justify-content: space-between; /* 强制横向铺满 */
+}
+
+.matrix-char {
+    color: #0cf; /* 青蓝色 */
+    font-family: monospace;
+    font-size: 16px;
+    opacity: 0;
+    animation: fall 10s linear infinite; /* 超慢速度 */
+    width: 16px;
+    text-align: center;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+}
+
+/* 搜索框、卡片样式保持不变 */
+.search-container {
+    padding: 20px;
+    text-align: center;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    position: relative;
+    width: 66.666%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.card .img-wrapper {
+    border: 3px solid blue;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 70%;
+}
+
+.card .img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card .title {
+    position: absolute;
+    top: 50%;
+    right: calc(30% - 33.333%);
+    transform: translateY(-50%);
+    width: calc(70% * 2/3);
+    height: calc(100% * 1/3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: 2px solid orange;
+    border-radius: 25px;
+    font-size: 5vw;
+    font-weight: bold;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+/* 搜索框：新增圆角边框 */
+#search-input {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px;
+  border: 1px solid #ccc; /* 新增边框 */
+  border-radius: 20px; /* 圆角效果 */
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
